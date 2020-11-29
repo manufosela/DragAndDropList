@@ -1,5 +1,5 @@
 {
-  "name": "draganddroplist",
+  "name": "drag-and-drop-list",
   "version": "1.0.0",
   "description": "Drag And Drop List Class",
   "main": "DragAndDropList.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manufosela/Drag-And-Drop-List.git"
+    "url": "git+https://github.com/manufosela/DragAndDropList.git"
   },
   "keywords": [
     "drag&drop",
