@@ -92,7 +92,7 @@ export class DragAndDropList {
         console.log(ev.target.innerHTML);
         [this.dragSrcEl.innerHTML, ev.target.innerHTML] = [ev.target.innerHTML, this.dragSrcEl.innerHTML];
       }
-      this.dndCallback();
+      this.dndCallback(ev.target);
     }
     return false;
   }
