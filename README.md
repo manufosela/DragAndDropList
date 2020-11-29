@@ -24,3 +24,9 @@ import { DragAndDropList } from '../DragAndDropList.js';
 const dndList = new DragAndDropList(); 
 DragAndDropList.init();
 ```
+
+# Contructor Parameters
+const dndList = new DragAndDropList(first, second);
+ 
+* first: ['replace'] || 'before' -> drag and drop mode
+* second: callbackFunction -> callback function to run when drag and drop finish

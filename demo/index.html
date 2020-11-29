@@ -3,6 +3,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo Drag And Drop List</title>
+  <style>
+    ul {
+      padding: 0px;
+    }
+    ul li {
+      font-family: "Raleway", sans-serif;
+      font-weight: 800;
+      height: 30px;
+      list-style-type: none;
+      margin: 10px;
+      background-color: white;
+      color: #212121;
+      width: 250px;
+      line-height: 3.2;
+      padding-left: 10px;
+      user-select: none;
+      margin: 10px auto;
+    }
+  </style>
 </head>
 <body>
   <ul data-draggable="true">
@@ -16,8 +35,12 @@
   </ul>
   <script type="module">
     import { DragAndDropList } from '../DragAndDropList.js'; 
-    const dndList = new DragAndDropList('before');
+    const dndList = new DragAndDropList('before', finishDnD);
     dndList.init(); 
+
+    function finishDnD() {
+      console.log('terminó el arrastre');
+    }
   </script>
 </body>
 </html>
