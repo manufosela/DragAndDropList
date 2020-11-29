@@ -1,0 +1,37 @@
+{
+  "name": "draganddroplist",
+  "version": "1.0.0",
+  "description": "Drag And Drop List Class",
+  "main": "DragAndDropList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "es-dev-server --app-index /demo/index.html --node-resolve --watch --open",
+    "build": "rm -rf dist && mkdir dist && rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manufosela/Drag-And-Drop-List.git"
+  },
+  "keywords": [
+    "drag&drop",
+    "javascript"
+  ],
+  "author": "@manufosela",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "^7.2.3",
+    "es-dev-server": "^1.46.0",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-terser": "^5.1.3"
+  }
+}

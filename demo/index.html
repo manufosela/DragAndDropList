@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Drag And Drop List</title>
+</head>
+<body>
+  <ul data-draggable="true">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Angular</li>
+    <li>React</li>
+    <li>VueJS</li>
+    <li>Lit-Element</li>
+    <li>Javascript</li>
+  </ul>
+  <script type="module">
+    import { DragAndDropList } from '../DragAndDropList.js'; 
+    const dndList = new DragAndDropList('before');
+    dndList.init(); 
+  </script>
+</body>
+</html>
