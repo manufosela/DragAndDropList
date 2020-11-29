@@ -21,7 +21,7 @@ export class DragAndDropList {
     style.innerHTML = `
       ul { padding: 0px; }
       ul .draggable { will-change: transform; cursor: move; transition: all 200ms; user-select: none; position: relative; }
-      ul .draggable:after { content:'\\002630'; left: -20px; font-size: 10px; position: absolute; cursor: pointer; line-height: 5; transition: all 200ms; transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.5); transform: translateX(120%); opacity: 0; }
+      ul .draggable:after { content:'\\002630'; left: -20px; font-weight:bold; font-size: 10px; position: absolute; cursor: pointer; line-height: 2; transition: all 200ms; transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.5); transform: translateX(120%); opacity: 0; }
       ul .draggable:hover:after { opacity: 1; transform: translate(0); }
       .over { transform: scale(1.1, 1.1); }
     `;
