@@ -120,6 +120,12 @@ export class DragAndDropList {
     el.addEventListener('dragend', this.dragEnd, false);
   }
 
+  makeElementDnD(element) {
+    element.classList.add('draggable');
+    element.setAttribute('draggable', true);
+    this.addEventsDragAndDrop(element);
+  }
+
   /**
    * init method to make draganddropable all li element into and ul with data-id=draggable
    */
@@ -128,9 +134,7 @@ export class DragAndDropList {
     draggablesList.forEach((draggableList) => {
       const draggableElements = draggableList.querySelectorAll('li');
       draggableElements.forEach((element) => {
-        element.classList.add('draggable');
-        element.setAttribute('draggable', true);
-        this.addEventsDragAndDrop(element);
+        this.makeElementDnD(element);
       });
     });
   }

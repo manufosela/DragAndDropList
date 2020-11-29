@@ -33,6 +33,8 @@
     <li>Lit-Element</li>
     <li>Javascript</li>
   </ul>
+  <button>+</button>
+
   <script type="module">
     import { DragAndDropList } from '../DragAndDropList.js'; 
     const dndList = new DragAndDropList('before', finishDnD);
@@ -41,6 +43,15 @@
     function finishDnD() {
       console.log('terminó el arrastre');
     }
+
+    function addNewElementList(ev) {
+      const ul = document.querySelector('ul');
+      const li = document.createElement('li');
+      li.innerHTML = 'New Element';
+      ul.appendChild(li);
+      dndList.makeElementDnD(li);
+    }
+    document.querySelector('button').addEventListener('click', addNewElementList);
   </script>
 </body>
 </html>
